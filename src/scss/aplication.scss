@@ -1,20 +1,24 @@
 @charset 'UTF-8';
 
-// Vendors
-@import "bootstrap/scss/bootstrap.scss";
-
 // Abstracts
 @import "./abstracts/variables";
 @import "./abstracts/functions";
 @import "./abstracts/mixins";
 
 // Base
+@import "./base/typography";
 @import "./base/animations";
 @import "./base/base";
-@import "./base/typography";
 
 // Layout
 @import "./layout/mediaquerys";
 
 //theme
 @import "./themes/light-theme";
+
+// Components
+@import "../components/PokemonCard/PokemonCard";
+@import "../components/PokemonList/PokemonList";
+
+// Pages
+@import "../pages/Pokedex/PokedexPage"

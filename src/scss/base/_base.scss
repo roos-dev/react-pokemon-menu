@@ -7,9 +7,16 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 16px;
 }
 
 body {
   box-sizing: border-box;
+  background: $green;
+  font-family: 'Oswald', sans-serif;
 }
+
+h1 {font-size: $h1Text;}
+h2 {font-size: $h2Text;}
+h3 {font-size: $h3Text;}
+
