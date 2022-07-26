@@ -1,5 +1,8 @@
 @charset 'UTF-8';
 
+// Vendors
+@import "bootstrap/scss/bootstrap.scss";
+
 // Abstracts
 @import "./abstracts/variables";
 @import "./abstracts/functions";

@@ -1,9 +1,21 @@
-function PokemonCard() {
-    return (
-      <div>
-        <div className="pokemon-card"></div>
-      </div>
-    );
+import PropTypes from 'prop-types';
+
+export default function PokemonCard({ pokemonImage }) {
+  return (
+    <div className="pokemon-card">
+      <img
+        src={pokemonImage}
+        alt="pokemon image"
+        className="pokemon-card__image"
+      />
+    </div>
+  );
 }
 
-export default PokemonCard;  
+PokemonCard.propTypes = {
+    pokemonImage: PropTypes.string
+}
+
+PokemonCard.defaultProps = {
+    pokemonImage: ""
+}
