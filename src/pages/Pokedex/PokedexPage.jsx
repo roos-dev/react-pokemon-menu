@@ -5,21 +5,31 @@ import PokemonService from "../../services/PokemonService";
 
 function PokedexPage() {
   const [pokemonList, setPokemonList] = useState([]);
-  const pokemonImage = "";
+  const [pokemonImage, setPokemonImage] = useState(null);
 
   async function getPokemons() {
     setPokemonList(await PokemonService.getPokemons());
   }
-  
-  useEffect( () => {
+
+  async function getPokemonImage(pokemonName) {
+    const {
+      data: { sprites },
+    } = await PokemonService.getPokemonByName(pokemonName);
+    setPokemonImage(sprites["front_default"]);
+  }
+
+  useEffect(() => {
     getPokemons();
   }, []);
-  
 
   return (
     <div className="pokedex-page">
       <PokemonCard pokemonImage={pokemonImage} className="pokemon-card" />
-      <PokemonList pokemonList={pokemonList} className="pokemon-list" />
+      <PokemonList
+        pokemonList={pokemonList}
+        className="pokemon-list"
+        onPokemonSelected={getPokemonImage}
+      />
     </div>
   );
 }

@@ -6,10 +6,8 @@ export default function PokemonListItem({
   onItemClick,
 }) {
   return (
-    <div className="list-item">
-      <span
-        onClick={() => onItemClick(pokemonName)}
-      >{`No ${pokemonNumber} ${pokemonName.toUpperCase()}`}</span>
+    <div className="list-item" onClick={() => onItemClick(pokemonName)}>
+      <h2 className="list-item__text">{`No ${pokemonNumber} ${pokemonName.toUpperCase()}`}</h2>
     </div>
   );
 }

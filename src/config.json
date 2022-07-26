@@ -1,5 +1,7 @@
 {
     "urls": {
-        "pokemon": "https://pokeapi.co/api/v2/pokemon"
-    }
+        "pokemon": "https://pokeapi.co/api/v2/pokemon",
+        "pokemonByName": "https://pokeapi.co/api/v2/pokemon/:name"
+    },
+    "pokemonListAmount": 900
 }
