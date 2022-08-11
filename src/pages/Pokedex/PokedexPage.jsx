@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Dialog } from "primereact/dialog";
 import PokemonCard from "../../components/PokemonCard/PokemonCard";
 import PokemonList from "../../components/PokemonList/PokemonList";
 import PokemonService from "../../services/PokemonService";
@@ -19,7 +20,7 @@ function PokedexPage() {
   }
 
   useEffect(() => {
-    getPokemons();
+    getPokemons()
   }, []);
 
   return (
