@@ -3,11 +3,11 @@
   min-width: 150px;
   border: solid white 2px;
   box-shadow:0px 0px 0px 2px black inset;
-  border-radius: 50%;
-  background: #cedce7;
-  background: -moz-linear-gradient(top, #cedce7 12%, #596a72 98%);
-  background: -webkit-linear-gradient(top, #cedce7 12%, #596a72 98%);
-  background: linear-gradient(to bottom, #cedce7 12%, #596a72 98%);
+  border-radius: 0%;
+  background: red;
+  // background: -moz-linear-gradient(top, #cedce7 12%, #596a72 98%);
+  // background: -webkit-linear-gradient(top, #cedce7 12%, #596a72 98%);
+  // background: linear-gradient(to bottom, #cedce7 12%, #596a72 98%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */
   display: flex;
   align-items: center;
